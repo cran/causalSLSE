@@ -1,4 +1,4 @@
-322bbaad7a49526520bdb0d84fa9fb39 *DESCRIPTION
+0168e2f15de05d4e378bb26cb5c869bc *DESCRIPTION
 fd9402b5663f65ffa65afe01c32e4898 *NAMESPACE
 a76954067965562aa1c7745c5a6fbfac *R/Fcslse.R
 c1c12857ac3d643bed14f8b89272ff15 *R/altCausal.R
@@ -14,7 +14,7 @@ e0b6892acb6ba8d65f20f041d7481141 *data/simDat4.rda
 ab88c84e74136b281e0d5519531d8591 *inst/CITATION
 ad0295efbd64fe8fa768dcdce28b1b15 *inst/doc/causalSLSE.R
 8510ff072b55e031e959cf234d7062ba *inst/doc/causalSLSE.Rmd
-0760c24d42dd8519eb64cfc1a5bf0f47 *inst/doc/causalSLSE.pdf
+c485b8568fdb96bebce52f8e457cf459 *inst/doc/causalSLSE.pdf
 e6eeef46f55c889b4f9def15019c81c8 *man/altCausal.Rd
 84b473b77c9e07a0461122a17b9dc51a *man/asModel.Rd
 68e84fa676e2b5dc0666f478fb53ece0 *man/causalSLSE.Rd
@@ -36,9 +36,10 @@ e7506973b22d7029579ad692f0a8b412 *man/simDat5.Rd
 f15b8a068ff28b11a04e395590b60fe7 *man/summary.Rd
 3c81e1a0f4440f8b519c414671244264 *man/update.Rd
 24451fdc961f31d4428dbf6cf5af8b18 *src/Makevars
-56cbd223eff9f90ec408922c0c01b2bc *src/causal.f
+3debb7156908e19e62f755dfbb81819d *src/causal.f
 f2b75c2a5553c755c8e6c0b6d5db7dc3 *src/dist.c
 6a126faa8a240f84e734d4b435ded501 *src/initcausal.c
+4c0c1e21a3a72c19ef7d3f414514661e *src/rsum.f90
 87db58fe533e382cdc78299af4ce0ae2 *src/slse.f
 8510ff072b55e031e959cf234d7062ba *vignettes/causalSLSE.Rmd
 3cd6a76eec9cd2799489802c298a2b62 *vignettes/slse.bib
