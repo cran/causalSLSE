@@ -2,7 +2,7 @@
       integer n, i, k
       double precision x1(k), x2(n,k), dist(n)
       do i=1,n
-         call exprsum((x1-x2(i,:))**2, k, dist(i))
+         call ksum((x1-x2(i,:))**2, k, dist(i))
       end do
       end
 
@@ -89,7 +89,7 @@ c     Also, rk is the weights attached to y2. it sums to n1
       do i=1,n1
          call findnni(x1(i,:), x2, tol, n2, k, minn, nn(i), ind(i,:))
          rk(ind(i,1:nn(i))) = rk(ind(i,1:nn(i))) + 1.0d0/nn(i)
-         call exprsum(y2(ind(i,1:nn(i))), nn(i), y2h(i))
+         call ksum(y2(ind(i,1:nn(i))), nn(i), y2h(i))
          y2h(i) = y2h(i)/nn(i)
       end do
       end
@@ -139,16 +139,16 @@ c     the output y2h is the estimated Y(2) for the group 1 individual
       else
          c = 0.3125
       end if      
-      call exprsum(valk, n, s0)
-      call exprsum(valk*y2, n, t0)
+      call ksum(valk, n, s0)
+      call ksum(valk*y2, n, t0)
       if (abs(s0) <= epsilon(p1)) then
          info = 1
       else
-         call exprsum(valk*p2, n, x1)
+         call ksum(valk*p2, n, x1)
          x1 = x1/s0
          dist = p2-x1
-         call exprsum(valk*dist**2, n, s2)
-         call exprsum(valk*dist*y2, n, t1)
+         call ksum(valk*dist**2, n, s2)
+         call ksum(valk*dist*y2, n, t1)
          if ((h>0) .and. (h<10000)) then
             r = h*abs(p1-x1)*c
          else

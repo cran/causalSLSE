@@ -33,7 +33,7 @@ A data frame containing 9 variables.
 
 "National Supported Work Evaluation Study, 1975-1979: Public Use Files."
 from the Interuniversity Consortium for Political and Social
-Research. URL: \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/7865}
+Research. URL:\doi{10.3886/ICPSR07865}
 }
 
 \references{

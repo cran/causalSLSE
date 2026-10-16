@@ -1,0 +1,4 @@
+Changes in version 0.4-2
+
+o Removed the non portable use of long double in fortran code. Instead, the extra precision of sums is based on Kahan compensated summation. 
+o Added link to new Codeberg development page.
